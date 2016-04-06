@@ -1,0 +1,250 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+ 
+<html xmlns = "http://www.w3.org/1999/xhtml">
+	<head>
+		<title> Homework 2A </title>
+		<link rel = "stylesheet" type = "text.css" href = "Assign2Astyle.css">
+		<script>
+			function validateLogin(){
+				var name = document.forms["loginForm"]["user"].value;
+				var pass = document.forms["loginForm"]["pw"].value;
+				
+				if(name = null || name = ""){
+					alert("Username is invalid! Please try again.");
+					return false;
+				}
+				
+				else if(pass != "secret"){
+					alert("Password failed to validate! Please try again.");
+					return false;
+				}
+				
+				alert("Clever girl...");
+			}
+		</script>
+		<style>
+			a {
+				color: blue;
+				text-decoration: none;
+			}
+		
+			blockquote {font-size: 25px;}
+			
+			p {font-size: 18px;}
+			
+			h2 {margin: 10px 10px;}
+			
+			body {
+				background-image: url('404420.jpg');
+				background-color: #000000;
+				color: white;
+			}
+			
+			strong {font-size: 22px;}
+			
+			table, th, td {
+				border: dashed orange 2px;
+				border-collapse: collapse;
+				margin: 0px 0px 10px 12px;
+				background-color: black;
+			}
+			
+			th, td {
+				padding: 5px;
+			}
+			
+			label {margin-left: 12px;}
+			
+			:target {
+				
+			}
+		</style>
+	</head>
+	<body>
+		<h2 id = "top" style = "color: white; font-family: Comic Sans, cursive; margin-left: 22px;">
+			<b> Welcome to my website! </b>
+		</h2>
+		
+		<hr />
+		
+		<p style = "margin-left: 50px;"><a href = "#bottom"> Jump to the bottom of the page? </a></p>
+		
+		<!-- Misc. links start -->
+		<span style = "float: right; margin: 0px 0px 10px 12px; text-align: center;">
+			<p> Here are some links to check out! </p>
+			<a href = "http://www.darksoulsii.com/us/"> Dark Souls 2 Official Site </a>
+			<br />
+			<a href = "http://darksouls2.wiki.fextralife.com/Dark+Souls+2+Wiki"> Dark Souls 2 Wiki </a>
+			<br />
+			<a href = "http://darksouls.wiki.fextralife.com/Dark+Souls+Wiki"> Dark Souls Wiki </a>
+		</span>
+		<!-- Misc. links end -->
+		
+		<!-- Quote span start -->
+		<span style = "position: absolute; left: 350px; top: 535px; padding: 10px; width: 285px;
+			border: inset blue 5px; background-color: black;">
+			<p><br /> A quote I find relevant to this assignment: </p>
+		
+			<blockquote class = "italic" cite = "">
+				"Nothing makes a person more productive <br />
+				than the last ten minutes."
+				<br /><br />
+				-Neil Patrick Harris
+			</blockquote>
+		</span>
+		<!-- Quote span end -->
+		
+		<!-- Start Assignment infoBox -->
+		<div id = "infoBox" style = "position = absolute; border-color: red;">
+			<ul class = "c"> <strong> Assignment Information </strong>
+				<li style = "font-size: 18px"> Name: Jason McGough </li>
+				<li> Completed Date: <b> 2-20-2014 </b></li>
+				<li> Completed Time: <b> 12:07pm </b></li>
+				<li><strike> Paragraphs </strike></li>
+				<li><strike> Line breaks </strike></li>
+				<li><strike> Headings </strike></li>
+				<li><strike> Block Quotes </strike></li>
+				<li> Fonts
+					<ul class = "b">
+						<li><strike> Sizes </strike></li>
+						<li><strike> Styles </strike></li>
+					</ul>
+				</li>
+				<li><strike> Horiz Rules </strike></li>
+				<li><strike> Images </strike></li>
+				<li><strike> Links </strike></li>
+				<li><strike> Targets </strike></li>
+				<li> Lists 
+					<ul class = "a">
+						<li><strike> Ordered </strike></li>
+						<li><strike> Unordered </strike></li>
+					</ul>
+				</li>
+				<li><strike> Tables </strike></li>
+				<li><strike> Forms </strike></li>
+				<li> CSS styles
+					<ul class = "b">
+						<li><strike> External </strike></li>
+						<li><strike> Document </strike></li>
+						<li><strike> Inline </strike></li>
+					</ul>
+				</li>
+				<li> Selectors
+					<ul>
+						<li><strike> Class </strike></li>
+						<li><strike> Id </strike></li>
+					</ul>
+				</li>
+				<li> Properties
+					<ul>
+						<li><strike> Fonts </strike></li>
+						<li><strike> Text </strike></li>
+						<li><strike> Lists </strike></li>
+						<li><strike> Colors </strike></li>
+						<li><strike> Padding/margins </strike></li>
+						<li><strike> Backgrounds </strike></li>
+						<li><strike> Borders </strike></li>
+						<li><strike> Span/div </strike></li>
+					</ul>
+				</li>
+				<li><strike> Exercise 2.4 </strike></li>
+				<li><strike> Exercise 3.4 </strike></li>
+			</ul>
+		</div>
+		<!-- End Assignment InfoBox -->
+		
+		<!-- Start Input Box -->
+		<div id = "infoBox" style = "font-family: Courier New, monospace;
+			position: absolute; left: 339px; top: 60px; border-color: white;">
+			<p> The password is secret... </p>
+			<form name="loginForm" action="" onsubmit="validateLogin()" method="post">
+				<label>Username: </label><input type = "text" name = "user"
+					maxlength = "50"></input><br />
+				<label>Password: </label><input type = "password" name = "pw"><br />
+				<input type = "submit" value = "OK">
+			</form>
+		</div>
+		<!-- End Input Box -->
+		
+		<!-- image start -->
+		<image src = "me.jpg" alt = "A picture of me" height = "250" width = "305"
+			style = "border: groove orange 5px; margin: 12px;
+			position: absolute; left: 339px; top: 255px;">
+		<!-- image end -->
+		
+		<hr style= "margin-top: 60px;"/>
+		
+		<!-- Table start -->
+		<table><label> My Favorite DS Equipment </label>
+			<tr>
+				<th> </th>
+				<th> Right </th>
+				<th> Left </th>
+				<th> Helm </th>
+				<th> Chest </th>
+				<th> Gloves </th>
+				<th> Legs </th>
+				<th> Rings </th>
+			</tr>
+			<tr>
+				<td> Main </td>
+				<td> Claymore </td>
+				<td> Heater Shield </td>
+				<td> Wanderer Hood </td>
+				<td> Knight Armor </td>
+				<td> Giants Guantlets </td>
+				<td> Knight Leggings </td>
+				<td> Ring of FaP </td>
+			</tr>
+			<tr>
+				<td> Alt </td>
+				<td> Murakumo </td>
+				<td> Composite Bow </td>
+				<td> Gargoyle Helm </td>
+				<td> Cleric Armor </td>
+				<td> Knight Guantlets </td>
+				<td> Cleric Leggings </td>
+				<td> Havel's Ring </td>
+			</tr>
+		</table>
+		<!-- Table end -->
+		
+		<hr />
+		
+		<!-- Ordered list begin -->
+		<p> How to make a peanut butter and jelly sandwich </p>
+		<ol>
+			<li> Collect the ingredients/tools!
+				<ul>
+					<li> 2 pieces of bread </li>
+					<li> Peanut butter </li>
+					<li> Jelly or jam </li>
+					<li> Butter knife (not for consumption) </li>
+				</ul>
+			</li>
+			<li> Spread the peanut butter evenly onto one slice of bread using the butter knife. </li>
+			<li> Spread jelly or jam evenly onto the other slice of bread using the butter knife. </li>
+			<li> Press the two slices of bread together. </li>
+			<li> Enjoy! </li>
+		</ol>
+		<!-- Ordered list end -->
+		
+		<hr />
+		
+		<p> Hey look, buttons! </p>
+		<form>
+			<label> Eeny </label><input type = "radio" name = "choices"></input><br />
+			<label> Meeny </label><input type = "radio" name = "choices"></input><br />
+			<label> Miny </label><input type = "radio" name = "choices"></input><br />
+			<label> Moe </label><input type = "radio" name = "choices"></input><br />
+			<label> C. It's always C... </label><input type = "radio" name = "choices"></input><br />
+			<label> All of the above </label><input type = "radio" name = "choices"></input><br />
+			<label> Some of the above </label><input type = "radio" name = "choices"></input><br />
+			<input type = "submit" value = "...this one?">
+		</form>
+		
+		<p><a id = "bottom" href = "#top"> Back to the top of the page? </a></p>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+	background-color: black;
+	color: white;
+	font-family: Courier New, monospace;
+	font-size: 22px;
+}
+
+form {
+	border-width: 3px;
+	border-style: solid;
+	width: 410px;
+	height: 137px;
+	position: relative;
+	left: 50px;
+}
+
+input {
+	text-align: right;
+	font-size: 27px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.opfield {
+	border-width: 1px;
+	border-style: solid;
+	width: 402px;
+	padding: 3px;
+}
+
+.button {
+	text-align: center;
+	width: 50px;
+}

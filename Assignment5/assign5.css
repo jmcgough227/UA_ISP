@@ -1,0 +1,20 @@
+/* Assignment 5 CSS */
+
+body {
+	background-color: black;
+	color: white;
+}
+
+table {
+	border-style: double;
+	border-width: 4px;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+button {
+	margin-left: 2px;
+	height: 24px;
+	width: 74px;
+}
+

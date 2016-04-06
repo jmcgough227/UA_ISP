@@ -1,0 +1,22 @@
+// Final Project CSS file
+
+form
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+td
+{
+	width: 150px;
+	border: 2px solid black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tblhead
+{
+	font-weight: bold;
+}

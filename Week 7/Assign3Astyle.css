@@ -1,0 +1,24 @@
+/* Assignment 2A external style sheet */
+
+blockquote.italic {font-style: italic;}
+
+#infoBox {
+	width:300px;
+	padding:2px;
+	border-style: ridge;
+	border-color: Orange;
+	border-width: 5px;
+	margin: 12px;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-color: #000000;
+	color: white;
+}
+
+ul.a {list-style-type: circle;}
+
+ul.b {list-style-type: square;}
+
+ul.c {list-style-type: disc;}
+
+hr {height: 3px;}

@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+ 
+<html xmlns = "http://www.w3.org/1999/xhtml" lang = "en-us">
+	<head>
+		<title> Project form J1 </title>
+		<style>
+			body {
+				color: white;
+				background-color: #303030;
+				background-image: url('Grocery-List.jpg');
+				background-repeat: no-repeat;
+				background-position: right;
+				background-size: 50%;
+			}
+			
+			p {font-size: 28px;}
+			
+			label {font-size: 22px;}
+			
+			input.qField {width: 28px;}
+			
+			hr {
+				position: relative;
+				left: -500px;
+				width: 800px;
+				height: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p> A Grocery List </p>
+		<p style="font-size: 18px;"> Ideally each item will be dynamic later </p>
+		<form>
+			<input class = "qField" type = "decimal"></input><label> Bananas(bunch) </label>
+			<input type = "submit"></input><br />
+			<input class = "qField" type = "decimal"></input><label> Eggs(doz) </label>
+			<input type = "submit"></input><br />
+			<input class = "qField" type = "decimal"></input><label> Milk(gal) </label>
+			<input type = "submit"></input>
+			
+			<hr />
+		
+			<p style="font-size: 18px;"> Current items list is then displayed elsewhere </p>
+			<ul><b style="font-size: 22px;"> Selected Items </b>
+				<li> 2 Banana (bunch) </li>
+				<li> 1 Egg (doz) </li>
+				<li> 2 Milk (gal) </li>
+			</ul>
+			
+			<input type="submit" value="Finalize List">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+ 
+<html xmlns = "http://www.w3.org/1999/xhtml" lang = "en-us">
+	<head>
+		<title> Project form (JavaScript) J2 </title>
+		<style>
+			body {
+				color: white;
+				background-color: #303030;
+				background-image: url('Grocery-List.jpg');
+				background-repeat: no-repeat;
+				background-position: right;
+				background-size: 50%;
+			}
+			
+			p {font-size: 28px;}
+			
+			label {font-size: 22px;}
+			
+			input.qField {width: 28px;}
+			
+			hr {
+				position: relative;
+				left: -500px;
+				width: 800px;
+				height: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<p> Grocery Item Ratings <br />
+			Each grocery item will have it's own rating  and associated cost
+		</p>
+		
+		<form>
+			<input type="checkbox"></input><label> Store A - Ground beef: rating 4/5 - $4.10/lb </label><br />
+			<input type="checkbox"></input><label> Store B - Ground beef: rating 2/5 - $2.49/lb </label><br />
+			<input type="checkbox"></input><label> Store B - Ground beef: rating 4/5 - $3.99/lb </label><br />
+			<input type="checkbox"></input><label> Store C - Ground beef: rating 5/5 - $5.27/lb </label><br />
+			<input type="checkbox"></input><label> Store D - Ground beef: rating 3/5 - $3.25/lb </label><br />
+			<input type="submit">
+			
+			<p> This choice could potentially be made automatically to fit the given budget </p>
+			<label> Set a budget: $</label><input type="text" style="width: 80px;">
+			<input type="submit">
+		</form>
+			
+	</body>
+</html>
